@@ -1,0 +1,55 @@
+\documentclass[letterpaper]{memoir}
+%% package declarations
+\usepackage{fontspec}
+\usepackage[margin=.5in]{geometry}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{subfiles} %%including to easily swap components
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{enumitem}
+%% define a custom blue, reminescent of the Dell logo color
+\definecolor{dellblue}{HTML}{0066CC}
+\setmainfont{Lato}
+\setlength{\baselineskip}{1.6em}
+\setlist[itemize]{noitemsep, nolistsep}
+\pagenumbering{gobble}
+\title{Resume}
+\author{O'Ryan Hedrick}
+
+\newcommand{\header}[1]{\begin{center}\textcolor{dellblue}{\rule[.25em]{6em}{.4pt} \textbf{#1} \rule[.25em]{6em}{.4pt}}\end{center}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+
+\begin{document}
+\begin{center}\Huge\textbf{O'Ryan Hedrick}\end{center}\normalsize
+\textcolor{dellblue}{\hrule}
+\subfile{sections/summary.tex}
+\subfile{sections/FLW-test.tex}
+\vspace{2ex}
+\subfile{sections/D1.tex}
+\vspace{2ex}
+\subfile{sections/STS.tex}
+\vspace{2ex}
+\subfile{sections/EHI-short.tex}
+\vfill
+\textcolor{dellblue}{\hrule}
+\begin{center}
+618-401-4575\\
+%\url{oryan.hedrick@gmail.com}
+oryan.hedrick@gmail.com
+\end{center}
+\newpage
+\subfile{sections/professionalskills.tex}
+\subfile{sections/certifications.tex}
+\subfile{sections/OtherSkills.tex}
+\subfile{sections/education.tex}
+\subfile{sections/references.tex}
+\vfill
+\textcolor{dellblue}{\hrule}
+\begin{center}
+618-401-4575\\
+%\url{oryan.hedrick@gmail.com}
+oryan.hedrick@gmail.com
+\end{center}
+\end{document}

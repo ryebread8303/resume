@@ -1,0 +1,3 @@
+# O'Ryan Hedrick's Resume
+
+I've been using Latex for some years now for my resume. I'm now committing it to GitHub so that I have a project there that use and update, and so that I no longer need Overleaf.com for editing, compiling, and storage of my resume. The dist folder contains the actual PDF output, the src folder contains all the tex files, and the build script runs lualatex to compile a new version of my resume.

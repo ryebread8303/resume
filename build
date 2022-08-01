@@ -1,0 +1,3 @@
+pushd src
+lualatex -interaction=nonstopmode --output-dir="../dist/" ./Resume-ORyan_Hedrick.tex
+popd
